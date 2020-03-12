@@ -1,0 +1,32 @@
+{
+  "name": "lambda-caching-s3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf .build .serverless",
+    "prebuild": "npm run clean",
+    "build": "serverless package --package dist",
+    "compile": "tsc",
+    "test": "nyc mocha --config ./test/.mocharc.yml"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.7.5",
+    "serverless": "^1.63.0",
+    "rimraf": "^2.6.3",
+    "serverless-plugin-typescript": "^1.1.7",
+    "moment": "^2.22.1",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.6.2",
+    "nyc": "^14.1.1",
+    "@types/mocha": "^5.2.7",
+    "karma": "~4.1.0"
+  },
+  "dependencies": {
+    "@types/node": "^13.7.7",
+    "moment": "^2.22.1"
+  }
+}

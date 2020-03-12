@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "moduleResolution": "node",
+        "rootDir": "./",
+        "allowJs": true,
+        "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "noImplicitThis": true,
+        "strictNullChecks": false,
+        "noImplicitReturns": true,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "outDir": "./dist",
+    },
+    "exclude": [
+        "node_modules",
+        "coverage",
+        "!node_modules/@types",
+        "test"
+    ]
+}
